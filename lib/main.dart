@@ -53,49 +53,50 @@ class BloodTypeSelectionPage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Center(
-          child: Wrap(
-            spacing: 16,
-            runSpacing: 16,
-            alignment: WrapAlignment.center,
-            children: bloodTypes.map((type) {
-              return GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => DonorListPage(bloodType: type),
-                    ),
-                  );
-                },
-                child: Container(
-                  width: 100,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(16),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.red.shade100,
-                        blurRadius: 8,
-                        offset: const Offset(0, 4),
-                      ),
-                    ],
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2, // 2 cards per row
+            crossAxisSpacing: 16,
+            mainAxisSpacing: 16,
+            childAspectRatio: 1.5, // Adjusted to maintain proper aspect ratio
+          ),
+          itemCount: bloodTypes.length,
+          itemBuilder: (context, index) {
+            final type = bloodTypes[index];
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DonorListPage(bloodType: type),
                   ),
-                  child: Center(
-                    child: Text(
-                      type,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
+                );
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(16),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.red.shade100,
+                      blurRadius: 8,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: Text(
+                    type,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
-              );
-            }).toList(),
-          ),
+              ),
+            );
+          },
         ),
       ),
     );
@@ -157,6 +158,13 @@ class DonorListPage extends StatelessWidget {
     int count = (maxWidth / minCardWidth).floor();
     return count < 1 ? 1 : count;
   }
+}
+
+// Function to make grid count responsive based on screen width
+int _getGridCount(double maxWidth) {
+  const double minCardWidth = 180; // or 160 if you want tighter fit
+  int count = (maxWidth / minCardWidth).floor();
+  return count < 1 ? 1 : count;
 }
 
 class DonorCard extends StatelessWidget {
