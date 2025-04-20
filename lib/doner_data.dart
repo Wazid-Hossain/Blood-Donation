@@ -95,6 +95,10 @@ class DonorData {
     },
   ];
 
+  static List<Map<String, String>> getAllDonors() {
+    return _donors; // assuming _donors is your main donor list
+  }
+
   static List<Map<String, String>> getDonorsByBloodType(String bloodType) {
     return _donors.where((donor) => donor['bloodType'] == bloodType).toList();
   }
