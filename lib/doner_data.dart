@@ -1,35 +1,18 @@
 class DonorData {
   static final List<Map<String, String>> _donors = [
+// For O+ blood type
+
     {
-      'name': 'John Doe',
+      'name': 'Aminul Islam Sujon',
       'bloodType': 'O+',
-      'contact': '01234-567890',
-      'emergency': '09876-543210',
-      'address': 'Dhaka, Bangladesh',
-      'lastDonation': '12 Mar 2025',
+      'contact': '01889-918888',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
       'status': 'Available',
-      'image': 'https://i.pravatar.cc/100?img=3'
+      'image': 'assets/images/sujon.jpg'
     },
-    {
-      'name': 'Jane Smith',
-      'bloodType': 'O+',
-      'contact': '01700-123456',
-      'emergency': '01900-654321',
-      'address': 'Chittagong, Bangladesh',
-      'lastDonation': '20 Feb 2025',
-      'status': 'Available',
-      'image': 'https://i.pravatar.cc/100?img=5'
-    },
-    {
-      'name': 'Ali Khan',
-      'bloodType': 'A+',
-      'contact': '01900-789456',
-      'emergency': '01800-123789',
-      'address': 'Khulna, Bangladesh',
-      'lastDonation': '25 Jan 2025',
-      'status': 'Not Available',
-      'image': 'https://i.pravatar.cc/100?img=6'
-    },
+
     {
       'name': 'Wazid Hossain',
       'bloodType': 'O+',
@@ -43,16 +26,73 @@ class DonorData {
     },
 
     {
-      'name': 'Saeid Hossain',
-      'bloodType': 'A+',
-      'contact': '01234-567890',
-      'emergency': '09876-543210',
-      'address': 'Dhaka, Bangladesh',
-      'lastDonation': '12 Mar 2025',
+      'name': 'Mohammad Zakir Hossain',
+      'bloodType': 'O+',
+      'contact': '01764-948406',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
       'status': 'Available',
-      'image': 'https://i.pravatar.cc/100?img=3'
+      'image': 'assets/images/jakir.jpg'
     },
-    // Add more donors as needed
+    {
+      'name': 'Masrul Hasan Himu',
+      'bloodType': 'O+',
+      'contact': '01765573637',
+      'emergency': '01718745677',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/himu.jpg'
+    },
+    {
+      'name': 'Mehedi Hasan Anik',
+      'bloodType': 'O+',
+      'contact': '0173208036',
+      'emergency': '01515659667',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/anik.jpg'
+    },
+    // end of O+ blood type
+
+    // A+ blood type
+    {
+      'name': 'RM Mithun',
+      'bloodType': 'A+',
+      'contact': '01791-939494',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/mithun.jpg'
+    },
+
+    {
+      'name': 'Md Bappy Ansari',
+      'bloodType': 'A+',
+      'contact': '01720-565738',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/bappy.jpg'
+    },
+
+// end of A+ blood type
+
+// AB+ Blood Type
+    {
+      'name': 'Md. Nahid Hossain',
+      'bloodType': 'AB+',
+      'contact': '01306-458417',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/nahid.jpg'
+    },
   ];
 
   static List<Map<String, String>> getDonorsByBloodType(String bloodType) {

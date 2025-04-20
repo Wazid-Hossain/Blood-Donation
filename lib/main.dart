@@ -126,17 +126,23 @@ class DonorListPage extends StatelessWidget {
         child: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 1000),
-            child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: _getGridCount(context), // Responsive columns
-                crossAxisSpacing: 16.0,
-                mainAxisSpacing: 16.0,
-                childAspectRatio: 0.75, // Adjust card height and width
-              ),
-              itemCount: donors.length,
-              itemBuilder: (context, index) {
-                final donor = donors[index];
-                return DonorCard(donor: donor);
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final gridCount = _getGridCount(constraints.maxWidth);
+
+                return GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: gridCount,
+                    crossAxisSpacing: 16,
+                    mainAxisSpacing: 16,
+                    childAspectRatio: 0.75,
+                  ),
+                  itemCount: donors.length,
+                  itemBuilder: (context, index) {
+                    final donor = donors[index];
+                    return DonorCard(donor: donor);
+                  },
+                );
               },
             ),
           ),
@@ -146,21 +152,10 @@ class DonorListPage extends StatelessWidget {
   }
 
   // Function to make grid count responsive based on screen width
-  int _getGridCount(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-
-    // If screen width is less than 600px, 1 card per row (for smaller screens)
-    if (screenWidth < 600) {
-      return 1;
-    }
-    // If screen width is between 600 and 900px, 2 cards per row
-    else if (screenWidth < 900) {
-      return 2;
-    }
-    // If screen width is above 900px, 3 cards per row
-    else {
-      return 3;
-    }
+  int _getGridCount(double maxWidth) {
+    const double minCardWidth = 180; // or 160 if you want tighter fit
+    int count = (maxWidth / minCardWidth).floor();
+    return count < 1 ? 1 : count;
   }
 }
 
@@ -171,8 +166,6 @@ class DonorCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isAsset = donor['imageType'] == 'asset';
-
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -185,26 +178,23 @@ class DonorCard extends StatelessWidget {
             offset: const Offset(0, 5),
           ),
         ],
+        image: DecorationImage(
+          image: AssetImage(donor['image']!),
+          fit: BoxFit.cover,
+          opacity: 0.3,
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Profile Picture (Check asset vs network)
           ClipRRect(
             borderRadius: BorderRadius.circular(50),
-            child: isAsset
-                ? Image.asset(
-                    donor['image']!,
-                    width: 60,
-                    height: 60,
-                    fit: BoxFit.cover,
-                  )
-                : Image.network(
-                    donor['image']!,
-                    width: 60,
-                    height: 60,
-                    fit: BoxFit.cover,
-                  ),
+            child: Image.asset(
+              donor['image']!,
+              width: 60,
+              height: 60,
+              fit: BoxFit.cover,
+            ),
           ),
           const SizedBox(height: 8),
           Center(
@@ -217,32 +207,43 @@ class DonorCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          Text('📞 ${donor['contact']}'),
-          Text('📱 Emergency: ${donor['emergency']}'),
-          Text('🏠 ${donor['address']}'),
-          const SizedBox(height: 8),
-          Text('🩸 Last Donation: ${donor['lastDonation']}'),
-          const SizedBox(height: 8),
-          Row(
-            children: [
-              Icon(
-                donor['status'] == 'Available'
-                    ? Icons.check_circle
-                    : Icons.cancel,
-                color:
-                    donor['status'] == 'Available' ? Colors.green : Colors.red,
-                size: 16,
+          // Wrapping text content in SingleChildScrollView to prevent overflow
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('📞 ${donor['contact']}'),
+                  Text('📱 Emergency: ${donor['emergency']}'),
+                  Text('🏠 ${donor['address']}'),
+                  const SizedBox(height: 8),
+                  Text('🩸 Last Donation: ${donor['lastDonation']}'),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Icon(
+                        donor['status'] == 'Available'
+                            ? Icons.check_circle
+                            : Icons.cancel,
+                        color: donor['status'] == 'Available'
+                            ? Colors.green
+                            : Colors.red,
+                        size: 16,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        donor['status']!,
+                        style: TextStyle(
+                          color: donor['status'] == 'Available'
+                              ? Colors.green
+                              : Colors.red,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-              const SizedBox(width: 4),
-              Text(
-                donor['status']!,
-                style: TextStyle(
-                  color: donor['status'] == 'Available'
-                      ? Colors.green
-                      : Colors.red,
-                ),
-              ),
-            ],
+            ),
           ),
         ],
       ),
