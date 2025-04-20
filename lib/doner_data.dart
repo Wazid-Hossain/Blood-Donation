@@ -55,6 +55,37 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/anik.jpg'
     },
+    {
+      'name': 'Sohodev Mk',
+      'bloodType': 'O+',
+      'contact': '01727071941',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/sohodev.jpg'
+    },
+    {
+      'name': 'Shohidul Islam',
+      'bloodType': 'O+',
+      'contact': '01534618495',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/shohid.jpg'
+    },
+    {
+      'name': 'Shahadat H. Akash',
+      'bloodType': 'O+',
+      'contact': '01849786211',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/akash.jpg'
+    },
+
     // end of O+ blood type
 
     // A+ blood type
@@ -80,6 +111,28 @@ class DonorData {
       'image': 'assets/images/bappy.jpg'
     },
 
+    {
+      'name': 'MH Mubin',
+      'bloodType': 'A+',
+      'contact': '01754595024',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/mubin.jpg'
+    },
+
+    {
+      'name': 'Tarequl Islam ',
+      'bloodType': 'A+',
+      'contact': '01321102685',
+      'emergency': '01948762786',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/tariq.jpg'
+    },
+
 // end of A+ blood type
 
 // AB+ Blood Type
@@ -92,6 +145,17 @@ class DonorData {
       'lastDonation': 'N/A',
       'status': 'Available',
       'image': 'assets/images/nahid.jpg'
+    },
+// O- Blood Type
+    {
+      'name': 'Alif Sakib',
+      'bloodType': 'O-',
+      'contact': '01775778144',
+      'emergency': '01862279675',
+      'address': 'Rampura, Dhaka ',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/alif.jpg'
     },
   ];
 
