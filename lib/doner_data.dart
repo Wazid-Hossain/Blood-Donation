@@ -85,6 +85,16 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/akash.jpg'
     },
+    {
+      'name': 'Md abdul rakib',
+      'bloodType': 'O+',
+      'contact': '01787539246',
+      'emergency': 'N/A',
+      'address': 'Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/rakib.jpg'
+    },
 
     // end of O+ blood type
 
@@ -132,6 +142,26 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/tariq.jpg'
     },
+    {
+      'name': 'Imran Hossain Shuvo',
+      'bloodType': 'A+',
+      'contact': '01876-066231',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/shuvo.jpg'
+    },
+    {
+      'name': 'SK Shofiq',
+      'bloodType': 'A+',
+      'contact': '01601-777228',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/shofiq.jpg'
+    },
 
 // end of A+ blood type
 
@@ -155,6 +185,16 @@ class DonorData {
       'lastDonation': 'N/A',
       'status': 'Available',
       'image': 'assets/images/alamin.jpg'
+    },
+    {
+      'name': 'Shaikh alom',
+      'bloodType': 'AB+',
+      'contact': '01626853499',
+      'emergency': 'N/A',
+      'address': 'Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/alom.jpg'
     },
 // O- Blood Type
     {
