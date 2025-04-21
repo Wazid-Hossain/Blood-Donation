@@ -146,6 +146,16 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/nahid.jpg'
     },
+    {
+      'name': 'MD AL Amin',
+      'bloodType': 'AB+',
+      'contact': 'N/A',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/alamin.jpg'
+    },
 // O- Blood Type
     {
       'name': 'Alif Sakib',
@@ -156,6 +166,18 @@ class DonorData {
       'lastDonation': 'N/A',
       'status': 'Available',
       'image': 'assets/images/alif.jpg'
+    },
+
+    // B+ blood type
+    {
+      'name': 'Ak Akash',
+      'bloodType': 'B+',
+      'contact': '01707-660703',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/akash.png'
     },
   ];
 
