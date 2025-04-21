@@ -177,7 +177,7 @@ class DonorData {
       'address': 'Colony, Naogaon',
       'lastDonation': 'N/A',
       'status': 'Available',
-      'image': 'assets/images/akash.png'
+      'image': 'assets/images/itachi.jpg'
     },
   ];
 
