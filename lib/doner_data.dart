@@ -189,12 +189,22 @@ class DonorData {
     {
       'name': 'MD AL Amin',
       'bloodType': 'AB+',
-      'contact': 'N/A',
+      'contact': '01826526666',
       'emergency': 'N/A',
       'address': 'Colony, Naogaon',
       'lastDonation': 'N/A',
       'status': 'Available',
       'image': 'assets/images/alamin.jpg'
+    },
+    {
+      'name': 'Akbar Khan ',
+      'bloodType': 'AB+',
+      'contact': '01973745501',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/akbor.jpg'
     },
     {
       'name': 'Shaikh alom',
@@ -228,6 +238,16 @@ class DonorData {
       'lastDonation': 'N/A',
       'status': 'Available',
       'image': 'assets/images/itachi.jpg'
+    },
+    {
+      'name': 'Samir Ansary',
+      'bloodType': 'B+',
+      'contact': '01303-044423',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/samiransari.jpg'
     },
   ];
 
