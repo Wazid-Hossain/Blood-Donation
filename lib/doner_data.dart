@@ -120,6 +120,16 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/bappy.jpg'
     },
+    {
+      'name': 'Samir Ansary ',
+      'bloodType': 'A+',
+      'contact': '01778-059784',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/samir.jpg'
+    },
 
     {
       'name': 'MH Mubin',
