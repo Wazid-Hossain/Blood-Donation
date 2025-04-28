@@ -269,6 +269,16 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/itachi.jpg'
     },
+    {
+      'name': 'Bacchu Oshni',
+      'bloodType': 'B+',
+      'contact': '01917935506',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/itachi.jpg'
+    },
 
     // B- blood type
     {
