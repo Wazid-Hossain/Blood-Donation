@@ -249,6 +249,18 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/samiransari.jpg'
     },
+
+    // B- blood type
+    {
+      'name': 'Hasnain Ahmed Emon',
+      'bloodType': 'B-',
+      'contact': '01959-073034',
+      'emergency': 'N/A',
+      'address': 'Ishwardi, Pabna',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/emon.jpg'
+    },
   ];
 
   static List<Map<String, String>> getAllDonors() {
