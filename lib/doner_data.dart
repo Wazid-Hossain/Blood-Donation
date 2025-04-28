@@ -257,8 +257,8 @@ class DonorData {
       'contact': '01959-073034',
       'emergency': 'N/A',
       'address': 'Ishwardi, Pabna',
-      'lastDonation': 'N/A',
-      'status': 'Available',
+      'lastDonation': '25th Epril 2025',
+      'status': 'Unavailable',
       'image': 'assets/images/emon.jpg'
     },
   ];
