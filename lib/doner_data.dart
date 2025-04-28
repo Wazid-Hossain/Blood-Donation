@@ -95,6 +95,16 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/rakib.jpg'
     },
+    {
+      'name': 'Assaddujjaman Moon',
+      'bloodType': 'O+',
+      'contact': '01320380936',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/itachi.jpg'
+    },
 
     // end of O+ blood type
 
@@ -248,6 +258,16 @@ class DonorData {
       'lastDonation': 'N/A',
       'status': 'Available',
       'image': 'assets/images/samiransari.jpg'
+    },
+    {
+      'name': 'Amit Oshni',
+      'bloodType': 'B+',
+      'contact': '01727-451869',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/itachi.jpg'
     },
 
     // B- blood type
