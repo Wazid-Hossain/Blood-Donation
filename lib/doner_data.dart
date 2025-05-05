@@ -12,7 +12,6 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/sujon.jpg'
     },
-
     {
       'name': 'Wazid Hossain',
       'bloodType': 'O+',
@@ -24,7 +23,6 @@ class DonorData {
       'image': 'assets/images/wazid.jpg',
       'imageType': 'asset'
     },
-
     {
       'name': 'Mohammad Zakir Hossain',
       'bloodType': 'O+',
@@ -140,7 +138,6 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/samir.jpg'
     },
-
     {
       'name': 'MH Mubin',
       'bloodType': 'A+',
@@ -151,7 +148,6 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/mubin.jpg'
     },
-
     {
       'name': 'Tarequl Islam ',
       'bloodType': 'A+',
