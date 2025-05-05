@@ -19,7 +19,7 @@ class DonorData {
       'contact': '01784880361',
       'emergency': '01737997860',
       'address': 'Colony, Naogaon',
-      'lastDonation': '5 Aug 2024',
+      'lastDonation': '4 Aug 2024',
       'status': 'Available',
       'image': 'assets/images/wazid.jpg',
       'imageType': 'asset'
@@ -85,6 +85,26 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/akash.jpg'
     },
+    {
+      'name': 'Md abdul rakib',
+      'bloodType': 'O+',
+      'contact': '01787539246',
+      'emergency': 'N/A',
+      'address': 'Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/rakib.jpg'
+    },
+    {
+      'name': 'Assaddujjaman Moon',
+      'bloodType': 'O+',
+      'contact': '01320380936',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/itachi.jpg'
+    },
 
     // end of O+ blood type
 
@@ -110,6 +130,16 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/bappy.jpg'
     },
+    {
+      'name': 'Samir Ansary ',
+      'bloodType': 'A+',
+      'contact': '01778-059784',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/samir.jpg'
+    },
 
     {
       'name': 'MH Mubin',
@@ -132,6 +162,26 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/tariq.jpg'
     },
+    {
+      'name': 'Imran Hossain Shuvo',
+      'bloodType': 'A+',
+      'contact': '01876-066231',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/shuvo.jpg'
+    },
+    {
+      'name': 'SK Shofiq',
+      'bloodType': 'A+',
+      'contact': '01601-777228',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/shofiq.jpg'
+    },
 
 // end of A+ blood type
 
@@ -149,12 +199,32 @@ class DonorData {
     {
       'name': 'MD AL Amin',
       'bloodType': 'AB+',
-      'contact': 'N/A',
+      'contact': '01826526666',
       'emergency': 'N/A',
       'address': 'Colony, Naogaon',
       'lastDonation': 'N/A',
       'status': 'Available',
       'image': 'assets/images/alamin.jpg'
+    },
+    {
+      'name': 'Akbar Khan ',
+      'bloodType': 'AB+',
+      'contact': '01973745501',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/akbor.jpg'
+    },
+    {
+      'name': 'Shaikh alom',
+      'bloodType': 'AB+',
+      'contact': '01626853499',
+      'emergency': 'N/A',
+      'address': 'Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/alom.jpg'
     },
 // O- Blood Type
     {
@@ -177,7 +247,49 @@ class DonorData {
       'address': 'Colony, Naogaon',
       'lastDonation': 'N/A',
       'status': 'Available',
-      'image': 'assets/images/akash.png'
+      'image': 'assets/images/itachi.jpg'
+    },
+    {
+      'name': 'Samir Ansary',
+      'bloodType': 'B+',
+      'contact': '01303-044423',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/samiransari.jpg'
+    },
+    {
+      'name': 'Amit Oshni',
+      'bloodType': 'B+',
+      'contact': '01727-451869',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/itachi.jpg'
+    },
+    {
+      'name': 'Bacchu Oshni',
+      'bloodType': 'B+',
+      'contact': '01917935506',
+      'emergency': 'N/A',
+      'address': 'Mirpur, Dhaka',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/itachi.jpg'
+    },
+
+    // B- blood type
+    {
+      'name': 'Hasnain Ahmed Emon',
+      'bloodType': 'B-',
+      'contact': '01959-073034',
+      'emergency': 'N/A',
+      'address': 'Ishwardi, Pabna',
+      'lastDonation': '21th Epril 2025',
+      'status': 'Unavailable',
+      'image': 'assets/images/emon.jpg'
     },
   ];
 

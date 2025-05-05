@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
+  appwrite: ^15.0.2
 
 dev_dependencies:
   flutter_test:
@@ -74,8 +75,17 @@ flutter:
     - assets/images/tariq.jpg
     - assets/images/akash.jpg
     - assets/images/shohid.jpg
-    - assets/images/akash.png
+    - assets/images/itachi.jpg
     - assets/images/alamin.jpg
+    - assets/assets/images/rakib.jpg
+    - assets/assets/images/alom.jpg
+    - assets/assets/images/shuvo.jpg
+    - assets/assets/images/shofiq.jpg
+    - assets/assets/images/samir.jpg
+    - assets/assets/images/samiransari.jpg
+    - assets/assets/images/akbor.jpg
+    - assets/assets/images/emon.jpg
+    # - assets/images/alamin.jpg
     
 
 
