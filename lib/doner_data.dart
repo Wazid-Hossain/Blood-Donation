@@ -117,6 +117,16 @@ class DonorData {
       'status': 'Available',
       'image': 'assets/images/mithun.jpg'
     },
+    {
+      'name': 'Kawser KKR',
+      'bloodType': 'A+',
+      'contact': '01798-183332',
+      'emergency': 'N/A',
+      'address': 'Colony, Naogaon',
+      'lastDonation': 'N/A',
+      'status': 'Available',
+      'image': 'assets/images/kawser.jpg'
+    },
 
     {
       'name': 'Md Bappy Ansari',
